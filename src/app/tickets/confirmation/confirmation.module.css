@@ -1,0 +1,197 @@
+.page {
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--cream);
+}
+
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 200;
+  padding: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: rgba(8, 7, 5, 0.9);
+  backdrop-filter: blur(14px);
+}
+
+.logo {
+  font-family: var(--font-serif), serif;
+  font-size: 17px;
+  letter-spacing: .13em;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.logo b {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.back {
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back span {
+  width: 20px;
+  height: 1px;
+  background: currentColor;
+  display: inline-block;
+}
+
+.back:hover {
+  color: var(--gold);
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 130px 64px 80px;
+  text-align: center;
+}
+
+.checkWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.checkmark {
+  width: 92px;
+  height: 92px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: popIn .55s ease;
+}
+
+.tickIcon {
+  width: 46px;
+  height: 46px;
+}
+
+.tickIcon path {
+  stroke: var(--gold);
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+  animation: drawTick .45s ease .25s forwards;
+}
+
+.wrap h1 {
+  font-family: var(--font-serif), serif;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.ref {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--deep);
+  padding: 22px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.title {
+  color: var(--cream);
+  font-family: var(--font-serif), serif;
+  font-size: 30px;
+  margin-bottom: 2px;
+}
+
+.sub {
+  margin-bottom: 10px;
+}
+
+.total {
+  margin-top: 10px;
+  color: var(--cream);
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ghost {
+  border: 1px solid var(--border-soft);
+  color: var(--muted);
+  background: transparent;
+  padding: 14px 24px;
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.ghost:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.home {
+  margin-top: 18px;
+  display: inline-block;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.home:hover {
+  color: var(--gold);
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(.65);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawTick {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav {
+    padding: 20px 28px;
+  }
+
+  .wrap {
+    padding: 106px 28px 64px;
+  }
+}
