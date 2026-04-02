@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 import { useLanguage } from '@/context/LanguageContext'
 import { t } from '@/translations'
@@ -183,7 +184,7 @@ export default function Tour() {
               <span className="t-tag">{tagLabel(c.cat)}</span>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
                 {c.ticket
-                  ? <a href="/tickets" className="t-tkt">{copy.tickets}</a>
+                  ? <Link href="/tickets" className="t-tkt">{copy.tickets}</Link>
                   : <span className="t-tkt sold">{copy.soldOut}</span>
                 }
                 <button type="button" className="t-poster" onClick={() => { setPosterOpen(true); setPosterFlipped(false) }}>

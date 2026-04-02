@@ -1,4 +1,4 @@
-import RepertoirePageContent from '@/components/RepertoirePageContent'
+import GalleryPageContent from '@/components/GalleryPageContent'
 
 export const metadata = {
   title: 'Gallery — Mahdi Dhaker Official',
@@ -6,6 +6,6 @@ export const metadata = {
     'Official gallery of Mahdi Dhaker performances, rehearsals, and stage moments.',
 }
 
-export default function RepertoirePage() {
-  return <RepertoirePageContent />
+export default function GalleryPage() {
+  return <GalleryPageContent />
 }

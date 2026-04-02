@@ -116,32 +116,36 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Environment Variables
 
-Create a `.env.local` file at the root:
-```env
-# Konnect Payment (add when Mahdi's merchant account is verified)
-KONNECT_API_KEY=
-KONNECT_WALLET_ID=
-KONNECT_RECEIVER_WALLET_ID=
-NEXT_PUBLIC_BASE_URL=https://www.mahdidhaker.com
-
-# Email (Resend — add when ready)
-RESEND_API_KEY=
-
-# Database (Supabase — add when ready)
-SUPABASE_URL=
-SUPABASE_ANON_KEY=
+Copy `.env.example` to `.env.local` and fill in values:
+```bash
+cp .env.example .env.local
 ```
+
+Required variables:
+- `NEXT_PUBLIC_BASE_URL` — Your deployed URL (e.g. `https://mahdidhaker.com`)
+- `KONNECT_API_KEY` — API key from Konnect dashboard
+- `KONNECT_WALLET_ID` — Wallet ID from Konnect dashboard
+- `KONNECT_API_URL` — Konnect endpoint (sandbox or production)
 
 ---
 
-## Deployment
+## Deployment to Vercel
 
-Deploy to Vercel in one command:
-```bash
-npx vercel
-```
+**⚠️ For ticketing to work after deployment, you MUST add environment variables in Vercel.**
 
-Then add environment variables in the Vercel dashboard under **Settings → Environment Variables**.
+See [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) for complete step-by-step setup guide.
+
+Quick steps:
+1. Push this repo to GitHub
+2. Import at [vercel.com/new](https://vercel.com/new)
+3. **Add environment variables in Vercel Settings** (see deployment guide)
+4. Deploy
+
+Required vars for production:
+- `NEXT_PUBLIC_BASE_URL` = your domain
+- `KONNECT_API_KEY` = from Konnect dashboard
+- `KONNECT_WALLET_ID` = from Konnect dashboard
+- `KONNECT_API_URL` = Konnect endpoint
 
 ---
 

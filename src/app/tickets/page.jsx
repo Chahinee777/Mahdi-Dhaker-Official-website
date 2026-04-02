@@ -1,17 +1,12 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useMemo, useState } from 'react'
-import { useRouter } from 'next/navigation'
 import styles from './tickets.module.css'
 import Cursor from '@/components/Cursor'
 import { useLanguage } from '@/context/LanguageContext'
 import { t } from '@/translations'
 import {
-  EVENT_DETAILS,
   TICKET_CATEGORIES,
-  calculateSubtotal,
-  saveOrder,
 } from '@/lib/tickets'
 
 const LocationPin = () => (
@@ -25,38 +20,10 @@ export default function TicketsPage() {
   const { lang } = useLanguage()
   const copy = t[lang].tickets
   const event = copy.event
-  const router = useRouter()
-  const [agreed, setAgreed] = useState(false)
-  const [quantities, setQuantities] = useState(
-    Object.fromEntries(TICKET_CATEGORIES.map((cat) => [cat.id, 0]))
-  )
-
-  const selectedItems = useMemo(() => {
-    return TICKET_CATEGORIES
-      .map((cat) => ({ ...cat, quantity: quantities[cat.id] || 0 }))
-      .filter((item) => item.quantity > 0)
-  }, [quantities])
-
-  const subtotal = useMemo(() => calculateSubtotal(selectedItems), [selectedItems])
-  const canProceed = selectedItems.length > 0 && agreed
-
-  const adjustQuantity = (id, diff) => {
-    setQuantities((prev) => {
-      const next = Math.max(0, (prev[id] || 0) + diff)
-      return { ...prev, [id]: next }
-    })
-  }
+  const category = TICKET_CATEGORIES[0]
 
   const proceedToCheckout = () => {
-    if (!canProceed) return
-    saveOrder({
-      items: selectedItems,
-      subtotal,
-      total: subtotal,
-      event: { ...EVENT_DETAILS, ...event },
-      createdAt: new Date().toISOString(),
-    })
-    router.push('/tickets/checkout')
+    window.open('https://teskerti.tn/evenement/violin-obession', '_blank')
   }
 
   return (
@@ -102,53 +69,28 @@ export default function TicketsPage() {
           <h2>{copy.selectTitle}</h2>
 
           <div className={styles.ticketList}>
-            {TICKET_CATEGORIES.map((cat) => (
-              <div className={styles.ticketCard} key={cat.id}>
-                <div>
-                  <div className={styles.ticketName}>{copy.standardName || cat.name}</div>
-                  <div className={styles.ticketDesc}>{copy.standardDesc || cat.description}</div>
-                </div>
-                <div className={styles.ticketRight}>
-                  <div className={styles.ticketPrice}>{cat.price} TND</div>
-                  <div className={styles.qty}>
-                    <button type="button" onClick={() => adjustQuantity(cat.id, -1)}>-</button>
-                    <span>{quantities[cat.id] || 0}</span>
-                    <button type="button" onClick={() => adjustQuantity(cat.id, 1)}>+</button>
-                  </div>
-                </div>
+            <div className={styles.ticketCard}>
+              <div>
+                <div className={styles.ticketName}>{copy.standardName || category.name}</div>
+                <div className={styles.ticketDesc}>{copy.standardDesc || category.description}</div>
               </div>
-            ))}
+              <div className={styles.ticketRight}>
+                <div className={styles.ticketPrice}>{category.price} TND</div>
+              </div>
+            </div>
           </div>
 
           <div className={styles.summary}>
-            <div className={styles.summaryTitle}>{copy.summaryTitle}</div>
-            {selectedItems.length === 0 && <p className={styles.empty}>{copy.empty}</p>}
-            {selectedItems.map((item) => (
-              <div className={styles.row} key={item.id}>
-                <span>{copy.standardName || item.name} x {item.quantity}</span>
-                <span>{item.quantity * item.price} TND</span>
-              </div>
-            ))}
-            <div className={styles.totalRow}>
-              <span>{copy.subtotal}</span>
-              <span>{subtotal} TND</span>
-            </div>
-
-            <label className={styles.terms}>
-              <input type="checkbox" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} />
-              <span>{copy.terms}</span>
-            </label>
+            <div className={styles.summaryTitle}>{copy.proceed}</div>
+            <p className={styles.empty}>{copy.standardName || category.name} · {category.price} TND</p>
 
             <button
               type="button"
               className={`btn btn-g ${styles.proceed}`}
-              disabled={!canProceed}
               onClick={proceedToCheckout}
             >
               {copy.proceed}
             </button>
-
-            <div className={styles.konnect}>{copy.poweredBy}</div>
           </div>
         </section>
       </main>

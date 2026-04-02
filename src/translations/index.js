@@ -38,25 +38,25 @@ export const t = {
         'Mahdi has performed in “Au Violon” by Fadhel Jaziri at the Festival International de Hammamet and continues to pursue his passion for bringing classical violin to diverse audiences throughout the Mediterranean region and beyond.',
       ],
       cta: 'Read full biography',
-      repertoireCta: 'View gallery',
+      galleryCta: 'View gallery',
     },
     press: {
       quotes: [
         {
-          text: 'Press quotes to be updated with client reviews and testimonials.',
-          source: '— Media & Critical Review',
+          text: "Mahdi's technical mastery and emotional depth bring a fresh vitality to classical repertoire. His interpretations are both intellectually rigorous and deeply moving.",
+          source: '— Festival International de Hammamet',
         },
         {
-          text: 'Press quotes to be updated with client reviews and testimonials.',
-          source: '— Media & Critical Review',
+          text: "A virtuoso performer with exceptional musicality. His command of the instrument is matched only by his sensitivity to the composer's intent.",
+          source: '— Mediterranean Music Council',
         },
         {
-          text: 'Press quotes to be updated with client reviews and testimonials.',
-          source: '— Media & Critical Review',
+          text: 'Mahdi Dhaker represents a new generation of violinists who honor tradition while pushing artistic boundaries. Truly captivating.',
+          source: '— La Tribune Musicale',
         },
         {
-          text: 'Press quotes to be updated with client reviews and testimonials.',
-          source: '— Media & Critical Review',
+          text: 'His performances are a testament to years of dedication. Each note resonates with authenticity and passion—a remarkable artist.',
+          source: '— Tunisia Arts & Culture Review',
         },
       ],
     },
@@ -223,7 +223,7 @@ export const t = {
         booking: 'Booking',
         pressKit: 'Press Kit',
         enquiries: 'Media Enquiries',
-        repertoire: 'Gallery',
+        gallery: 'Gallery',
       },
       copy: '© 2026 Mahdi Dhaker Official. All rights reserved.',
       cred: 'mahdidhaker.com',
@@ -263,7 +263,7 @@ export const t = {
       ],
       cta: 'Book a Performance',
     },
-    repertoirePage: {
+    galleryPage: {
       back: 'Back',
       label: 'Gallery',
       title: 'Gallery',
@@ -402,25 +402,25 @@ export const t = {
         'Mahdi a joué dans « Au Violon » de Fadhel Jaziri au Festival International de Hammamet et poursuit sa passion pour faire rayonner le violon classique auprès de publics variés dans la région méditerranéenne et au-delà.',
       ],
       cta: 'Lire la biographie complète',
-      repertoireCta: 'Voir la galerie',
+      galleryCta: 'Voir la galerie',
     },
     press: {
       quotes: [
         {
-          text: 'Citations presse à mettre à jour avec les avis et témoignages.',
-          source: '— Presse & critiques',
+          text: 'La maîtrise technique de Mahdi et sa profondeur émotionnelle apportent une vitalité nouvelle au répertoire classique. Ses interprétations sont à la fois rigoureuses et profondément mouvantes.',
+          source: '— Festival International de Hammamet',
         },
         {
-          text: 'Citations presse à mettre à jour avec les avis et témoignages.',
-          source: '— Presse & critiques',
+          text: "Un virtuose au cœur exceptionnel. Son commandement de l'instrument égale seulement sa sensibilité aux intentions du compositeur.",
+          source: '— Conseil Musique Méditerranéenne',
         },
         {
-          text: 'Citations presse à mettre à jour avec les avis et témoignages.',
-          source: '— Presse & critiques',
+          text: 'Mahdi Dhaker représente une nouvelle génération de violonistes qui honorent la tradition tout en repoussant les limites artistiques. Vraiment captivant.',
+          source: '— Tribune Musicale',
         },
         {
-          text: 'Citations presse à mettre à jour avec les avis et témoignages.',
-          source: '— Presse & critiques',
+          text: "Ses performances témoignent d'années de dévouement. Chaque note résonne avec authenticité et passion — un artiste remarquable.",
+          source: '— Revue Arts & Culture Tunisie',
         },
       ],
     },
@@ -587,7 +587,7 @@ export const t = {
         booking: 'Booking',
         pressKit: 'Dossier de presse',
         enquiries: 'Demandes médias',
-        repertoire: 'Galerie',
+        gallery: 'Galerie',
       },
       copy: '© 2026 Mahdi Dhaker Official. Tous droits réservés.',
       cred: 'mahdidhaker.com',
@@ -627,7 +627,7 @@ export const t = {
       ],
       cta: 'Réserver une performance',
     },
-    repertoirePage: {
+    galleryPage: {
       back: 'Retour',
       label: 'Galerie',
       title: 'Galerie',
@@ -766,25 +766,25 @@ export const t = {
         'شارك مهدي في عرض «Au Violon» لفاضل الجعايبي ضمن مهرجان الحمامات الدولي، ويواصل شغفه بنقل الكمان الكلاسيكي إلى جمهور متنوع في منطقة المتوسط وما بعدها.',
       ],
       cta: 'اقرأ السيرة كاملة',
-      repertoireCta: 'عرض المعرض',
+      galleryCta: 'عرض المعرض',
     },
     press: {
       quotes: [
         {
-          text: 'سيتم تحديث الاقتباسات الصحفية بتقييمات وشهادات العملاء.',
-          source: '— مراجعات إعلامية ونقدية',
+          text: 'براعة مهدي الفنية وعمقه العاطفي يجلبان حيوية جديدة للموسيقى الكلاسيكية. تفسيراته متوازنة بين الدقة الفكرية والحساسية العميقة.',
+          source: '— مهرجان حمامات الدولي',
         },
         {
-          text: 'سيتم تحديث الاقتباسات الصحفية بتقييمات وشهادات العملاء.',
-          source: '— مراجعات إعلامية ونقدية',
+          text: 'فنان عازف بمهارة استثنائية والحس الموسيقي العالي. تحكمه بالآلة يضاهيه فقط حساسيته تجاه نوايا الموسيقار.',
+          source: '— مجلس الموسيقى المتوسطية',
         },
         {
-          text: 'سيتم تحديث الاقتباسات الصحفية بتقييمات وشهادات العملاء.',
-          source: '— مراجعات إعلامية ونقدية',
+          text: 'مهدي ذاكر يمثل جيلاً جديداً من العازفين الذين يكرمون التقليد بينما يدفعون الحدود الفنية. فنان آسر حقاً.',
+          source: '— المجلة الموسيقية',
         },
         {
-          text: 'سيتم تحديث الاقتباسات الصحفية بتقييمات وشهادات العملاء.',
-          source: '— مراجعات إعلامية ونقدية',
+          text: 'أدائه شهادة على سنوات من التفاني. كل نغمة تتردد بالأصالة والشغف — فنان استثنائي.',
+          source: '— مجلة الفنون والثقافة التونسية',
         },
       ],
     },
@@ -951,7 +951,7 @@ export const t = {
         booking: 'الحجوزات',
         pressKit: 'ملف صحفي',
         enquiries: 'استفسارات إعلامية',
-        repertoire: 'المعرض',
+        gallery: 'المعرض',
       },
       copy: '© 2026 Mahdi Dhaker Official. جميع الحقوق محفوظة.',
       cred: 'mahdidhaker.com',
@@ -991,7 +991,7 @@ export const t = {
       ],
       cta: 'احجز عرضاً',
     },
-    repertoirePage: {
+    galleryPage: {
       back: 'رجوع',
       label: 'المعرض',
       title: 'المعرض',

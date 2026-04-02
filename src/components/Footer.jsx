@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
 import { t } from '@/translations'
 
@@ -45,7 +46,7 @@ export default function Footer() {
             <li><a href="#contact">{copy.pro.booking}</a></li>
             <li><a href="#contact">{copy.pro.pressKit}</a></li>
             <li><a href="#contact">{copy.pro.enquiries}</a></li>
-            <li><a href="/repertoire">{copy.pro.repertoire}</a></li>
+            <li><Link href="/gallery">{copy.pro.gallery}</Link></li>
           </ul>
         </div>
       </div>

@@ -6,8 +6,6 @@ const nextConfig = {
       { protocol: 'https', hostname: 'i.ytimg.com' },
     ],
   },
-
-  allowedDevOrigins: ['192.168.100.65'],
 }
 
 module.exports = nextConfig

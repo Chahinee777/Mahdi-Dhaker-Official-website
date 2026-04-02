@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
 import { t } from '@/translations'
 
@@ -39,8 +40,8 @@ export default function About() {
             <p key={i}>{p}</p>
           ))}
           <div style={{ marginTop: '32px', display: 'flex', flexWrap: 'wrap', gap: '18px' }}>
-            <a href="/bio" className="btn-ghost">{copy.about.cta}</a>
-            <a href="/repertoire" className="btn-ghost">{copy.about.repertoireCta}</a>
+            <Link href="/bio" className="btn-ghost">{copy.about.cta}</Link>
+            <Link href="/gallery" className="btn-ghost">{copy.about.galleryCta}</Link>
           </div>
         </div>
       </div>

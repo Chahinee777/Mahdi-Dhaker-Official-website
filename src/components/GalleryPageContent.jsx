@@ -3,11 +3,11 @@ import Link from 'next/link'
 import Cursor from '@/components/Cursor'
 import { useLanguage } from '@/context/LanguageContext'
 import { t } from '@/translations'
-import styles from '@/app/repertoire/repertoire.module.css'
+import styles from '@/app/gallery/gallery.module.css'
 
-export default function RepertoirePageContent() {
+export default function GalleryPageContent() {
   const { lang } = useLanguage()
-  const copy = t[lang].repertoirePage
+  const copy = t[lang].galleryPage
   const images = Array.from({ length: 22 }, (_, i) => i + 1)
 
   return (
