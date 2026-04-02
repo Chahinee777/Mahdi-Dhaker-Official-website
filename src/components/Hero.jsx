@@ -49,12 +49,12 @@ export default function Hero() {
             alt="Mahdi Dhaker — Violinist"
             fill
             priority
-            sizes="(max-width: 860px) 0px, 45vw"
+            sizes="(max-width: 860px) 92vw, 45vw"
             style={{
               objectFit: 'cover',
               objectPosition: 'center top',
               zIndex: 1,
-              opacity:0.55,
+              opacity: 0.92,
             }}
           />
 

@@ -36,7 +36,7 @@ export const metadata = {
   openGraph: {
     title: 'Mahdi Dhaker Official — Violinist',
     description: 'International Professional Violinist from Tunis. Performing across Europe and the Arab world.',
-    url: 'https://www.mahdidhaker.com',
+    url: 'https://mahdi-dhaker-official-website.vercel.app',
     siteName: 'Mahdi Dhaker Official',
     locale: 'en_US',
     type: 'website',

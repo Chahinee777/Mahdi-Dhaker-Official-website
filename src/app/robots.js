@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.mahdidhaker.com/sitemap.xml',
+    sitemap: 'https://mahdi-dhaker-official-website.vercel.app/sitemap.xml',
   }
 }

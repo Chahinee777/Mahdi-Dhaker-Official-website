@@ -96,7 +96,7 @@ export default async function Image() {
           color: '#7a7264',
           letterSpacing: '2px',
         }}>
-          mahdidhaker.com
+          mahdi-dhaker-official-website.vercel.app
         </div>
       </div>
     ),

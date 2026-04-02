@@ -80,13 +80,7 @@ export default function Media() {
           <div className="s-label rev">{copy.label}</div>
           <h2 className="s-title rev d1">{copy.title}</h2>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '2fr 1fr',
-            gridTemplateRows: '320px 320px',
-            gap: '10px',
-            marginTop: '52px',
-          }}>
+          <div className="m-grid" style={{ marginTop: '52px' }}>
             {/* Featured card — spans both rows */}
             <div
               className={`mc ${videos[0].bg} rev`}

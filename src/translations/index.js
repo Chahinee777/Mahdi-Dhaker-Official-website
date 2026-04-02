@@ -226,7 +226,7 @@ export const t = {
         gallery: 'Gallery',
       },
       copy: '© 2026 Mahdi Dhaker Official. All rights reserved.',
-      cred: 'mahdidhaker.com',
+      cred: 'mahdi-dhaker-official-website.vercel.app',
       dev: 'Developed by Chahine',
     },
     bioPage: {
@@ -590,7 +590,7 @@ export const t = {
         gallery: 'Galerie',
       },
       copy: '© 2026 Mahdi Dhaker Official. Tous droits réservés.',
-      cred: 'mahdidhaker.com',
+      cred: 'mahdi-dhaker-official-website.vercel.app',
       dev: 'Développé par Chahine',
     },
     bioPage: {
@@ -954,7 +954,7 @@ export const t = {
         gallery: 'المعرض',
       },
       copy: '© 2026 Mahdi Dhaker Official. جميع الحقوق محفوظة.',
-      cred: 'mahdidhaker.com',
+      cred: 'mahdi-dhaker-official-website.vercel.app',
       dev: 'تطوير شاهين',
     },
     bioPage: {
